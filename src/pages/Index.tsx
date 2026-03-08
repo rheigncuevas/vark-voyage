@@ -123,8 +123,38 @@ const Index = () => {
         </div>
       </section>
 
-      {/* VARK Styles */}
+      {/* Intro Video */}
       <section className="py-20 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="max-w-4xl mx-auto text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+              Watch: <span className="text-gradient-hero">Introduction to VARK</span>
+            </h2>
+            <p className="text-muted-foreground text-lg mb-8">
+              Get a quick overview of VARK learning styles before diving deeper.
+            </p>
+            <div className="rounded-2xl overflow-hidden border border-border shadow-xl">
+              <video
+                controls
+                className="w-full aspect-video bg-black"
+                preload="metadata"
+              >
+                <source src="/videos/vark-intro.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* VARK Styles */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-14"
