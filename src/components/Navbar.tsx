@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="w-8 h-8 rounded-lg gradient-hero flex items-center justify-center">
             <BookOpen className="w-4 h-4 text-primary-foreground" />
           </div>
-          <span className="text-gradient-hero">VARK Learn</span>
+          <span className="text-gradient-hero">VARKology</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-1">
