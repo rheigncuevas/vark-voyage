@@ -1,35 +1,40 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Eye, Headphones, BookOpen, Hand, ArrowRight, Sparkles } from "lucide-react";
+import { Eye, Headphones, BookOpen, Hand, ArrowRight, Sparkles, Brain, Lightbulb, Users, Target } from "lucide-react";
+import schoolLogo from "@/assets/school-logo.jpg";
 
 const varkStyles = [
   {
     key: "visual",
-    label: "Visual",
+    label: "Visual (V)",
     icon: <Eye className="w-6 h-6" />,
     gradient: "gradient-visual",
-    desc: "Learn through images, videos, diagrams, and spatial understanding.",
+    desc: "Visual learners think in pictures. They prefer diagrams, flowcharts, maps, and videos. When studying, they benefit from color-coding notes, creating mind maps, and watching demonstrations.",
+    traits: ["Prefers charts & diagrams", "Thinks in images", "Remembers faces easily"],
   },
   {
     key: "auditory",
-    label: "Auditory",
+    label: "Auditory (A)",
     icon: <Headphones className="w-6 h-6" />,
     gradient: "gradient-auditory",
-    desc: "Learn through listening, discussions, podcasts, and verbal instructions.",
+    desc: "Auditory learners absorb information best through listening. They thrive in lectures, group discussions, and podcasts. They often talk through problems and benefit from reading aloud.",
+    traits: ["Learns through listening", "Enjoys discussions", "Remembers conversations"],
   },
   {
     key: "reading",
-    label: "Read & Write",
+    label: "Read & Write (R)",
     icon: <BookOpen className="w-6 h-6" />,
     gradient: "gradient-reading",
-    desc: "Learn through reading text, writing notes, and written exercises.",
+    desc: "Read/Write learners excel with text-based information. They love reading textbooks, writing essays, taking detailed notes, and creating lists. Written words are their primary tool for understanding.",
+    traits: ["Loves reading & writing", "Takes detailed notes", "Prefers text over visuals"],
   },
   {
     key: "kinesthetic",
-    label: "Kinesthetic",
+    label: "Kinesthetic (K)",
     icon: <Hand className="w-6 h-6" />,
     gradient: "gradient-kinesthetic",
-    desc: "Learn through hands-on experience, practice, and physical activities.",
+    desc: "Kinesthetic learners need hands-on experience. They learn by doing — building models, conducting experiments, role-playing, and engaging in physical activities connected to the lesson.",
+    traits: ["Learns by doing", "Needs movement", "Prefers real-world examples"],
   },
 ];
 
@@ -45,6 +50,29 @@ const subjects = [
     title: "Contemporary Arts in the Philippines",
     desc: "Discover Philippine contemporary art forms through diverse learning approaches.",
     gradient: "gradient-kinesthetic",
+  },
+];
+
+const deeperInsights = [
+  {
+    icon: <Brain className="w-8 h-8" />,
+    title: "Multiple Intelligences Connection",
+    desc: "VARK connects to Howard Gardner's Theory of Multiple Intelligences. While Gardner identified 8 types of intelligence (linguistic, logical, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalistic), VARK simplifies this into four practical learning preferences that students can immediately apply to their study habits.",
+  },
+  {
+    icon: <Lightbulb className="w-8 h-8" />,
+    title: "You're Not Just One Type",
+    desc: "Most people are multimodal learners — meaning they use a combination of VARK styles. Research by Neil Fleming, who created the VARK model in 1987, shows that about 60% of learners don't fit neatly into a single category. The key is knowing your dominant style while being flexible enough to use others when needed.",
+  },
+  {
+    icon: <Users className="w-8 h-8" />,
+    title: "Why It Matters in the Classroom",
+    desc: "When teachers use only one teaching method (like lectures), they only reach one type of learner effectively. VARK-aligned education ensures every student has access to materials that match how their brain best processes information — leading to better retention, higher engagement, and improved academic performance.",
+  },
+  {
+    icon: <Target className="w-8 h-8" />,
+    title: "Practical Study Tips",
+    desc: "Visual learners: use highlighters and draw diagrams. Auditory learners: record lessons and discuss with classmates. Read/Write learners: rewrite notes in your own words. Kinesthetic learners: use flashcards, build models, or walk while reviewing. Combining strategies from multiple styles creates the strongest learning experience.",
   },
 ];
 
@@ -64,16 +92,23 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <Sparkles className="w-4 h-4" />
-              Senior High School Learning Hub
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+              <img src={schoolLogo} alt="Padre Garcia Integrated National High School Logo" className="w-8 h-8 rounded-full object-cover" />
+              <div className="flex flex-col items-start leading-tight">
+                <span className="flex items-center gap-1.5">
+                  <Sparkles className="w-4 h-4" />
+                  Senior High School Learning Hub
+                </span>
+                <span className="text-xs text-muted-foreground">Padre Garcia Integrated National High School</span>
+              </div>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-6">
-              Learn Your Way with{" "}
-              <span className="text-gradient-hero">VARK</span>
+              <span className="text-gradient-hero">VARKology</span>
+              <br />
+              <span className="text-2xl md:text-3xl font-medium text-muted-foreground">Explore Beyond Your Capabilities</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-              Discover your learning style and access curated resources aligned with the MELC curriculum.
+              Discover your unique learning style and unlock your full potential with curated resources aligned with the MELC curriculum.
               Visual, Auditory, Reading & Writing, or Kinesthetic — we've got you covered.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
@@ -100,9 +135,10 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
               What is <span className="text-gradient-hero">VARK</span>?
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              VARK is a learning style model that categorizes learners into four types. 
-              Understanding your style helps you study more effectively and retain knowledge better.
+            <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+              VARK stands for <strong className="text-foreground">Visual, Auditory, Read/Write, and Kinesthetic</strong> — a learning style model developed by Neil Fleming in 1987 in New Zealand.
+              It helps learners identify how they best absorb, process, and retain information. Instead of a one-size-fits-all approach to education,
+              VARK recognizes that every person's brain is wired differently, and understanding your style can dramatically improve how effectively you study and learn.
             </p>
           </motion.div>
 
@@ -120,7 +156,53 @@ const Index = () => {
                   {style.icon}
                 </div>
                 <h3 className="font-display font-semibold text-lg mb-2">{style.label}</h3>
-                <p className="text-sm text-muted-foreground">{style.desc}</p>
+                <p className="text-sm text-muted-foreground mb-3">{style.desc}</p>
+                <ul className="space-y-1">
+                  {style.traits.map((trait) => (
+                    <li key={trait} className="text-xs text-muted-foreground flex items-center gap-1.5">
+                      <span className={`w-1.5 h-1.5 rounded-full ${style.gradient}`} />
+                      {trait}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Deeper Understanding */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <motion.div
+            className="text-center mb-14"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
+              Understanding <span className="text-gradient-hero">Learning Intelligence</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+              VARK isn't just about preferences — it's about how your brain is wired to learn. Here's a deeper look at why it matters.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {deeperInsights.map((insight, i) => (
+              <motion.div
+                key={insight.title}
+                className="bg-card rounded-2xl p-8 border border-border hover:shadow-xl transition-shadow"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+              >
+                <div className="w-14 h-14 rounded-xl gradient-hero flex items-center justify-center text-primary-foreground mb-5">
+                  {insight.icon}
+                </div>
+                <h3 className="font-display font-bold text-xl mb-3">{insight.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{insight.desc}</p>
               </motion.div>
             ))}
           </div>
@@ -128,7 +210,7 @@ const Index = () => {
       </section>
 
       {/* Subjects */}
-      <section className="py-20">
+      <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-14"
@@ -173,7 +255,8 @@ const Index = () => {
       {/* Footer */}
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>VARK Learn — A Senior High School Learning Resource Hub</p>
+          <p className="font-display font-semibold text-foreground">VARKology — Explore Beyond Your Capabilities</p>
+          <p className="mt-1">Padre Garcia Integrated National High School</p>
           <p className="mt-1">Aligned with the MELC Curriculum • Built for Filipino Learners</p>
         </div>
       </footer>
