@@ -53,6 +53,10 @@
     --gradient-reading: linear-gradient(135deg, hsl(140, 60%, 42%), hsl(160, 50%, 50%));
     --gradient-kinesthetic: linear-gradient(135deg, hsl(25, 95%, 53%), hsl(45, 90%, 55%));
 
+    /* Glass */
+    --glass-bg: hsla(0, 0%, 100%, 0.6);
+    --glass-border: hsla(0, 0%, 100%, 0.3);
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -98,6 +102,9 @@
     --kinesthetic-light: 25 60% 18%;
 
     --gradient-hero: linear-gradient(135deg, hsl(262, 83%, 45%), hsl(199, 89%, 38%), hsl(340, 82%, 42%));
+
+    --glass-bg: hsla(240, 15%, 12%, 0.6);
+    --glass-border: hsla(240, 10%, 25%, 0.4);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -145,4 +152,79 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+  }
+  .glass-strong {
+    background: var(--glass-bg);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.08);
+  }
+  .glow-primary {
+    box-shadow: 0 0 30px hsla(262, 83%, 58%, 0.3), 0 0 60px hsla(262, 83%, 58%, 0.1);
+  }
+  .glow-visual {
+    box-shadow: 0 0 25px hsla(262, 83%, 58%, 0.25);
+  }
+  .glow-auditory {
+    box-shadow: 0 0 25px hsla(199, 89%, 48%, 0.25);
+  }
+  .glow-reading {
+    box-shadow: 0 0 25px hsla(140, 60%, 42%, 0.25);
+  }
+  .glow-kinesthetic {
+    box-shadow: 0 0 25px hsla(25, 95%, 53%, 0.25);
+  }
+}
+
+/* Animated gradient border */
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate-gradient {
+  to { --angle: 360deg; }
+}
+
+.animated-border {
+  border: 2px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-image: 
+    linear-gradient(hsl(var(--card)), hsl(var(--card))),
+    conic-gradient(from var(--angle), hsl(262, 83%, 58%), hsl(199, 89%, 48%), hsl(340, 82%, 52%), hsl(25, 95%, 53%), hsl(262, 83%, 58%));
+  animation: rotate-gradient 4s linear infinite;
+}
+
+/* Mesh gradient background */
+.mesh-gradient {
+  background:
+    radial-gradient(at 20% 20%, hsla(262, 83%, 58%, 0.15) 0%, transparent 50%),
+    radial-gradient(at 80% 20%, hsla(199, 89%, 48%, 0.15) 0%, transparent 50%),
+    radial-gradient(at 50% 80%, hsla(340, 82%, 52%, 0.12) 0%, transparent 50%),
+    radial-gradient(at 80% 80%, hsla(25, 95%, 53%, 0.1) 0%, transparent 50%);
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsla(0, 0%, 100%, 0.08) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
 }
