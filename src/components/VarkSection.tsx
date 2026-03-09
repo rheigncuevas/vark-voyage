@@ -18,11 +18,11 @@ interface VarkSectionProps {
   kinesthetic: Resource[];
 }
 
-const tabs: { key: VarkType; label: string; icon: React.ReactNode; gradient: string }[] = [
-  { key: "visual", label: "Visual", icon: <Eye className="w-4 h-4" />, gradient: "gradient-visual" },
-  { key: "auditory", label: "Auditory", icon: <Headphones className="w-4 h-4" />, gradient: "gradient-auditory" },
-  { key: "reading", label: "Read & Write", icon: <BookOpen className="w-4 h-4" />, gradient: "gradient-reading" },
-  { key: "kinesthetic", label: "Kinesthetic", icon: <Hand className="w-4 h-4" />, gradient: "gradient-kinesthetic" },
+const tabs: { key: VarkType; label: string; icon: React.ReactNode; gradient: string; glow: string }[] = [
+  { key: "visual", label: "Visual", icon: <Eye className="w-4 h-4" />, gradient: "gradient-visual", glow: "glow-visual" },
+  { key: "auditory", label: "Auditory", icon: <Headphones className="w-4 h-4" />, gradient: "gradient-auditory", glow: "glow-auditory" },
+  { key: "reading", label: "Read & Write", icon: <BookOpen className="w-4 h-4" />, gradient: "gradient-reading", glow: "glow-reading" },
+  { key: "kinesthetic", label: "Kinesthetic", icon: <Hand className="w-4 h-4" />, gradient: "gradient-kinesthetic", glow: "glow-kinesthetic" },
 ];
 
 const iconMap: Record<VarkType, React.ReactNode> = {
@@ -46,20 +46,30 @@ const VarkSection = ({ visual, auditory, reading, kinesthetic }: VarkSectionProp
   return (
     <div>
       {/* Tab Buttons */}
-      <div className="flex flex-wrap gap-2 mb-8">
+      <div className="flex flex-wrap gap-3 mb-10">
         {tabs.map((tab) => (
-          <button
+          <motion.button
             key={tab.key}
             onClick={() => setActive(tab.key)}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl font-display font-medium text-sm transition-all ${
+            className={`relative flex items-center gap-2 px-5 py-3 rounded-2xl font-display font-medium text-sm transition-all ${
               active === tab.key
-                ? `${tab.gradient} text-primary-foreground shadow-lg`
-                : "bg-muted text-muted-foreground hover:text-foreground"
+                ? `${tab.gradient} text-primary-foreground ${tab.glow} shadow-lg`
+                : "glass text-muted-foreground hover:text-foreground"
             }`}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            layout
           >
             {tab.icon}
             {tab.label}
-          </button>
+            {active === tab.key && (
+              <motion.div
+                className="absolute -bottom-1 left-1/2 w-2 h-2 rounded-full bg-primary-foreground"
+                layoutId="varkDot"
+                style={{ x: "-50%" }}
+              />
+            )}
+          </motion.button>
         ))}
       </div>
 
@@ -67,24 +77,37 @@ const VarkSection = ({ visual, auditory, reading, kinesthetic }: VarkSectionProp
       <AnimatePresence mode="wait">
         <motion.div
           key={active}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -10 }}
-          transition={{ duration: 0.25 }}
+          initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          exit={{ opacity: 0, y: -20, filter: "blur(10px)" }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
         >
-          <p className="text-muted-foreground mb-6 text-lg">{descriptions[active]}</p>
+          <motion.p
+            className="text-muted-foreground mb-8 text-lg glass rounded-2xl p-5"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+          >
+            {descriptions[active]}
+          </motion.p>
 
           {/* Resource Cards */}
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-5 sm:grid-cols-2">
             {resources[active].map((r, i) => (
-              <ResourceCard
+              <motion.div
                 key={i}
-                title={r.title}
-                description={r.description}
-                url={r.url}
-                icon={iconMap[active]}
-                variant={active}
-              />
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.35, delay: i * 0.08 }}
+              >
+                <ResourceCard
+                  title={r.title}
+                  description={r.description}
+                  url={r.url}
+                  icon={iconMap[active]}
+                  variant={active}
+                />
+              </motion.div>
             ))}
           </div>
         </motion.div>
