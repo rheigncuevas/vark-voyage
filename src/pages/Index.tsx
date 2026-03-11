@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Eye, Headphones, BookOpen, Hand, ArrowRight, Sparkles, Brain, Lightbulb, Users, Target, Zap, GraduationCap } from "lucide-react";
+import { Eye, Headphones, BookOpen, Hand, ArrowRight, Sparkles, Brain, Lightbulb, Users, Target, Zap, GraduationCap, ClipboardCheck } from "lucide-react";
 import schoolLogo from "@/assets/school-logo.jpg";
 import FloatingOrbs from "@/components/FloatingOrbs";
 import ParticleField from "@/components/ParticleField";
@@ -8,6 +8,7 @@ import TypewriterText from "@/components/TypewriterText";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import MagneticButton from "@/components/MagneticButton";
 import GlowingCard from "@/components/GlowingCard";
+import VarkQuiz from "@/components/VarkQuiz";
 import { useRef } from "react";
 
 const varkStyles = [
