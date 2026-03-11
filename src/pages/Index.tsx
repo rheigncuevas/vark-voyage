@@ -311,6 +311,52 @@ const Index = () => {
         </div>
       </section>
 
+      {/* VARK Quiz Section */}
+      <section className="py-28 relative overflow-hidden mesh-gradient">
+        <ParticleField count={25} />
+        <FloatingOrbs orbs={[
+          { color: "bg-primary/10", size: "w-80 h-80", position: "-top-10 -left-20", delay: 0, duration: 9 },
+          { color: "bg-accent/8", size: "w-60 h-60", position: "bottom-10 right-0", delay: 2, duration: 7 },
+        ]} />
+        <div className="container mx-auto px-4 relative">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <motion.div
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <ClipboardCheck className="w-4 h-4" />
+              Pre-Assessment
+            </motion.div>
+            <motion.h2
+              className="text-4xl md:text-6xl font-display font-bold mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              What's Your <span className="text-gradient-hero">Learning Style</span>?
+            </motion.h2>
+            <motion.p
+              className="text-muted-foreground max-w-2xl mx-auto text-lg"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              Take this quick quiz to discover how your brain best absorbs information — then use your results to study smarter!
+            </motion.p>
+          </motion.div>
+
+          <VarkQuiz />
+        </div>
+      </section>
+
       {/* VARK Styles */}
       <section className="py-28 relative overflow-hidden">
         <div className="absolute inset-0 mesh-gradient opacity-60" />
