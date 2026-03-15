@@ -256,7 +256,7 @@ const Index = () => {
             >
               <MagneticButton>
                 <Link
-                  to="/mil"
+                  to="/effective-communication"
                   className="gradient-hero text-primary-foreground px-8 py-4 rounded-2xl font-display font-semibold hover:opacity-90 transition-all inline-flex items-center gap-3 glow-primary shadow-2xl text-lg group"
                 >
                   Start Learning
