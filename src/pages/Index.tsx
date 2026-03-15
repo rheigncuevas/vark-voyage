@@ -58,24 +58,56 @@ const varkStyles = [
   },
 ];
 
-const subjects = [
+const subjectAreas = [
   {
-    to: "/mil",
-    title: "Media & Information Literacy",
-    desc: "Explore media, information, and digital literacy through all VARK styles.",
+    to: "/effective-communication",
+    title: "Effective Communication",
+    desc: "Master oral, written, and media communication skills for the 21st century.",
     gradient: "gradient-visual",
     glow: "glow-visual",
     icon: <GraduationCap className="w-8 h-8" />,
     color: "text-visual",
+    count: 6,
   },
   {
-    to: "/cpar",
-    title: "Contemporary Arts in the Philippines",
-    desc: "Discover Philippine contemporary art forms through diverse learning approaches.",
+    to: "/life-and-career-skills",
+    title: "Life and Career Skills",
+    desc: "Develop personal growth and physical wellness for lifelong success.",
+    gradient: "gradient-auditory",
+    glow: "glow-auditory",
+    icon: <Users className="w-8 h-8" />,
+    color: "text-auditory",
+    count: 2,
+  },
+  {
+    to: "/general-mathematics",
+    title: "General Mathematics",
+    desc: "Build analytical reasoning through math concepts and statistics.",
+    gradient: "gradient-reading",
+    glow: "glow-reading",
+    icon: <Target className="w-8 h-8" />,
+    color: "text-reading",
+    count: 2,
+  },
+  {
+    to: "/general-science",
+    title: "General Science",
+    desc: "Explore Earth sciences and physical sciences with scientific literacy.",
     gradient: "gradient-kinesthetic",
     glow: "glow-kinesthetic",
     icon: <Zap className="w-8 h-8" />,
     color: "text-kinesthetic",
+    count: 2,
+  },
+  {
+    to: "/kasaysayan-ng-lipunang-pilipino",
+    title: "Kasaysayan ng Lipunang Pilipino",
+    desc: "Unawain ang kultura, lipunan, politika, sining, at pilosopiya ng Pilipinas.",
+    gradient: "gradient-hero",
+    glow: "glow-primary",
+    icon: <Brain className="w-8 h-8" />,
+    color: "text-primary",
+    count: 3,
   },
 ];
 
@@ -224,7 +256,7 @@ const Index = () => {
             >
               <MagneticButton>
                 <Link
-                  to="/mil"
+                  to="/effective-communication"
                   className="gradient-hero text-primary-foreground px-8 py-4 rounded-2xl font-display font-semibold hover:opacity-90 transition-all inline-flex items-center gap-3 glow-primary shadow-2xl text-lg group"
                 >
                   Start Learning
@@ -262,7 +294,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <AnimatedCounter end={4} suffix="" label="Learning Styles" gradient="gradient-visual" />
-            <AnimatedCounter end={2} suffix="" label="SHS Subjects" gradient="gradient-auditory" />
+            <AnimatedCounter end={5} suffix="" label="Subject Areas" gradient="gradient-auditory" />
             <AnimatedCounter end={100} suffix="+" label="Curated Resources" gradient="gradient-reading" />
             <AnimatedCounter end={1987} suffix="" label="Year VARK was Created" gradient="gradient-kinesthetic" />
           </div>
@@ -503,7 +535,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Subjects */}
+      {/* Subject Areas */}
       <section className="py-28 relative overflow-hidden mesh-gradient">
         <ParticleField count={25} />
         <div className="container mx-auto px-4 relative">
@@ -520,43 +552,46 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <GraduationCap className="w-4 h-4" />
-              Explore Subjects
+              Explore Subject Areas
             </motion.div>
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">Choose Your Subject</h2>
+            <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">Choose Your <span className="text-gradient-hero">Subject Area</span></h2>
             <p className="text-muted-foreground text-lg">
-              Explore curated VARK resources for these Senior High School subjects.
+              5 subject areas with 15 subjects — each with VARK-aligned learning resources.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-            {subjects.map((subj, i) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {subjectAreas.map((subj, i) => (
               <motion.div
                 key={subj.to}
                 initial={{ opacity: 0, y: 40, scale: 0.95 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.15, type: "spring" }}
+                transition={{ duration: 0.6, delay: i * 0.1, type: "spring" }}
               >
-                <MagneticButton strength={0.15}>
+                <MagneticButton strength={0.12}>
                   <Link
                     to={subj.to}
-                    className="group block glass-strong rounded-3xl p-9 transition-all duration-300 border border-border/50 hover:border-primary/30"
+                    className="group block glass-strong rounded-3xl p-8 transition-all duration-300 border border-border/50 hover:border-primary/30 h-full"
                   >
                     <motion.div
-                      className={`w-16 h-16 rounded-2xl ${subj.gradient} flex items-center justify-center text-primary-foreground mb-6 shadow-lg ${subj.glow}`}
+                      className={`w-14 h-14 rounded-2xl ${subj.gradient} flex items-center justify-center text-primary-foreground mb-5 shadow-lg ${subj.glow}`}
                       whileHover={{ rotate: 10, scale: 1.1 }}
                     >
                       {subj.icon}
                     </motion.div>
-                    <div className={`w-full h-1.5 rounded-full ${subj.gradient} mb-6 shimmer`} />
-                    <h3 className={`font-display font-bold text-2xl mb-3 group-hover:${subj.color} transition-colors`}>
+                    <div className={`w-full h-1 rounded-full ${subj.gradient} mb-5 shimmer`} />
+                    <h3 className="font-display font-bold text-xl mb-2 group-hover:text-primary transition-colors">
                       {subj.title}
                     </h3>
-                    <p className="text-muted-foreground mb-6 leading-relaxed">{subj.desc}</p>
-                    <span className="inline-flex items-center gap-2 text-primary font-display font-semibold text-sm group-hover:gap-4 transition-all">
-                      Explore Resources
-                      <ArrowRight className="w-4 h-4" />
-                    </span>
+                    <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{subj.desc}</p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-muted-foreground glass rounded-full px-3 py-1">{subj.count} subjects</span>
+                      <span className="inline-flex items-center gap-2 text-primary font-display font-semibold text-sm group-hover:gap-3 transition-all">
+                        Explore
+                        <ArrowRight className="w-4 h-4" />
+                      </span>
+                    </div>
                   </Link>
                 </MagneticButton>
               </motion.div>
@@ -564,8 +599,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
       <footer className="border-t border-border py-14 relative overflow-hidden">
         <div className="absolute inset-0 mesh-gradient opacity-30" />
         <div className="container mx-auto px-4 relative">
