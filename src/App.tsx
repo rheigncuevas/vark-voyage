@@ -5,8 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
-import MILPage from "./pages/MILPage";
-import CPARPage from "./pages/CPARPage";
+import CategoryPage from "./pages/CategoryPage";
+import SubjectPage from "./pages/SubjectPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,8 +20,8 @@ const App = () => (
         <Navbar />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/mil" element={<MILPage />} />
-          <Route path="/cpar" element={<CPARPage />} />
+          <Route path="/:categorySlug" element={<CategoryPage />} />
+          <Route path="/:categorySlug/:subjectSlug" element={<SubjectPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
