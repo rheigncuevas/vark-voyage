@@ -58,24 +58,56 @@ const varkStyles = [
   },
 ];
 
-const subjects = [
+const subjectAreas = [
   {
-    to: "/mil",
-    title: "Media & Information Literacy",
-    desc: "Explore media, information, and digital literacy through all VARK styles.",
+    to: "/effective-communication",
+    title: "Effective Communication",
+    desc: "Master oral, written, and media communication skills for the 21st century.",
     gradient: "gradient-visual",
     glow: "glow-visual",
     icon: <GraduationCap className="w-8 h-8" />,
     color: "text-visual",
+    count: 6,
   },
   {
-    to: "/cpar",
-    title: "Contemporary Arts in the Philippines",
-    desc: "Discover Philippine contemporary art forms through diverse learning approaches.",
+    to: "/life-and-career-skills",
+    title: "Life and Career Skills",
+    desc: "Develop personal growth and physical wellness for lifelong success.",
+    gradient: "gradient-auditory",
+    glow: "glow-auditory",
+    icon: <Users className="w-8 h-8" />,
+    color: "text-auditory",
+    count: 2,
+  },
+  {
+    to: "/general-mathematics",
+    title: "General Mathematics",
+    desc: "Build analytical reasoning through math concepts and statistics.",
+    gradient: "gradient-reading",
+    glow: "glow-reading",
+    icon: <Target className="w-8 h-8" />,
+    color: "text-reading",
+    count: 2,
+  },
+  {
+    to: "/general-science",
+    title: "General Science",
+    desc: "Explore Earth sciences and physical sciences with scientific literacy.",
     gradient: "gradient-kinesthetic",
     glow: "glow-kinesthetic",
     icon: <Zap className="w-8 h-8" />,
     color: "text-kinesthetic",
+    count: 2,
+  },
+  {
+    to: "/kasaysayan-ng-lipunang-pilipino",
+    title: "Kasaysayan ng Lipunang Pilipino",
+    desc: "Unawain ang kultura, lipunan, politika, sining, at pilosopiya ng Pilipinas.",
+    gradient: "gradient-hero",
+    glow: "glow-primary",
+    icon: <Brain className="w-8 h-8" />,
+    color: "text-primary",
+    count: 3,
   },
 ];
 
