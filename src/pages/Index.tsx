@@ -294,7 +294,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <AnimatedCounter end={4} suffix="" label="Learning Styles" gradient="gradient-visual" />
-            <AnimatedCounter end={2} suffix="" label="SHS Subjects" gradient="gradient-auditory" />
+            <AnimatedCounter end={5} suffix="" label="Subject Areas" gradient="gradient-auditory" />
             <AnimatedCounter end={100} suffix="+" label="Curated Resources" gradient="gradient-reading" />
             <AnimatedCounter end={1987} suffix="" label="Year VARK was Created" gradient="gradient-kinesthetic" />
           </div>
