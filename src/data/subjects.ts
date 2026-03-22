@@ -356,19 +356,67 @@ export const categories: Category[] = [
         slug: "general-mathematics",
         name: "General Mathematics",
         description: "Master key mathematical concepts including functions, rational equations, exponential and logarithmic functions, and business mathematics.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "General Mathematics PowerPoint",
+            description: "Visual presentation covering key GenMath topics like functions, rational expressions, and business math with graphs and charts.",
+            url: "https://www.scribd.com/presentation/427255641/General-Mathematics-PowerPoint",
+          },
+        ],
+        auditory: [
+          {
+            title: "Math Explained Podcast",
+            description: "Audio explanations of general mathematics topics — listen and learn about functions, equations, and problem-solving approaches.",
+            url: "https://open.spotify.com/show/2c7kM1S61DGpR7dnXQBre4",
+          },
+        ],
+        reading: [
+          {
+            title: "General Mathematics Reading Module",
+            description: "Comprehensive reading material and PDF slides covering GenMath lessons from functions to business math applications.",
+            url: "https://www.slideshare.net/slideshow/general-mathematicspdf/260278094",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "GenMath Learning Activity Sheets",
+            description: "Hands-on activity sheets with practice problems and exercises to build math skills through doing and solving.",
+            url: "https://www.scribd.com/document/561500821/Genmath-Learning-Activity-Sheets",
+          },
+        ],
       },
       {
         slug: "statistics-and-probability",
         name: "Statistics and Probability",
         description: "Learn how to collect, analyze, and interpret data using statistical methods and probability theory for informed decision-making.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Statistics & Probability Introduction",
+            description: "Visual slideshow introducing core concepts of statistics and probability with diagrams, graphs, and examples.",
+            url: "https://www.slideshare.net/slideshow/introduction-to-statistics-and-probability-232532533/232532533",
+          },
+        ],
+        auditory: [
+          {
+            title: "Statistics Podcast",
+            description: "Listen to clear explanations of statistical concepts, probability distributions, and data analysis methods.",
+            url: "https://open.spotify.com/show/3NA20RWdSNIWlQ3j3j40Gv",
+          },
+        ],
+        reading: [
+          {
+            title: "Statistics & Probability Module",
+            description: "Self-learning module covering random variables, probability distributions, sampling, and hypothesis testing.",
+            url: "https://www.scribd.com/document/498116517/statistics-and-probablity-SHS-11-module-1-week1",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Interactive Data Collection Activity",
+            description: "Learn statistics by doing — collect real data, create graphs, and compute probabilities through hands-on exercises.",
+            url: "https://youtu.be/HnIHpjb3apc?si=292w5xAMIKwEDkt8",
+          },
+        ],
       },
     ],
   },
