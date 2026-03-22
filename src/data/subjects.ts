@@ -280,19 +280,67 @@ export const categories: Category[] = [
         slug: "personal-development",
         name: "Personal Development",
         description: "Understand yourself better through self-awareness, emotional intelligence, interpersonal relationships, and goal setting for personal growth.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Personal Development Video Lessons",
+            description: "Video playlist covering self-awareness, goal-setting, stress management, and building healthy relationships.",
+            url: "https://youtube.com/playlist?list=PL5IAC9BfZH2aCOg8vOBUdvE8QsZFLN7av&si=_d5noxFiA848RBNP",
+          },
+        ],
+        auditory: [
+          {
+            title: "Personal Growth Podcast",
+            description: "A Spotify podcast that discusses self-improvement, emotional intelligence, and personal development strategies.",
+            url: "https://open.spotify.com/show/6rptxTurg2ujmQOInQ7low?si=jE2CFRQFQHqt2hyJqZ-BgQ",
+          },
+        ],
+        reading: [
+          {
+            title: "Personal Development Modules 1–6",
+            description: "Complete set of self-learning modules covering personality, self-concept, emotions, relationships, and career planning.",
+            url: "https://www.scribd.com/document/459293412/MODULE-1-6-Personal-Development",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Self-Discovery & Mindfulness Exercises",
+            description: "Guided mindfulness and self-reflection exercises to build self-awareness and emotional regulation through physical engagement.",
+            url: "https://youtu.be/ZS8DTcuzfEo?si=_5tewXFvytA_urUU",
+          },
+        ],
       },
       {
         slug: "physical-education",
         name: "Physical Education",
         description: "Engage in physical fitness activities, learn about health and wellness, and develop an active lifestyle through sports and exercise.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Physical Education Video Lessons",
+            description: "Video playlist demonstrating exercises, sports techniques, and fitness routines aligned with the PE curriculum.",
+            url: "https://youtube.com/playlist?list=PLyvLlSwBY36sG69-3xRGSsg529usfpwBg&si=P0b7CxHl_5ZbkDTs",
+          },
+        ],
+        auditory: [
+          {
+            title: "PE Audio Discussion",
+            description: "Listen to discussions about physical fitness concepts, health principles, and active lifestyle tips.",
+            url: "https://drive.google.com/file/d/1xfiP32I5hQLbHlI-WDPdVmcTeQ3AUxaj/view?usp=drivesdk",
+          },
+        ],
+        reading: [
+          {
+            title: "PE HOPE Module",
+            description: "Self-learning module covering health-optimizing physical education with lessons on fitness, nutrition, and wellness.",
+            url: "https://www.scribd.com/document/471319584/PE-12-HOPE-3-Q1-Module-1-Lesson-1-4-by-Shine",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Follow-Along Workout Routine",
+            description: "Get moving with this guided workout routine — perfect for practicing fitness exercises at home or in the classroom.",
+            url: "https://youtu.be/CDygGfksP-0?si=DcnDKIEDwzt508sL",
+          },
+        ],
       },
     ],
   },
