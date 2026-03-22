@@ -37,19 +37,67 @@ export const categories: Category[] = [
         slug: "oral-communication",
         name: "Oral Communication",
         description: "Build confidence in public speaking, interpersonal communication, and effective verbal expression across various contexts.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Oral Communication Video Lessons",
+            description: "Complete video lesson playlist covering oral communication concepts, speech types, and delivery techniques for SHS students.",
+            url: "https://youtube.com/playlist?list=PLcQqNc3v9Bcddr6xFs7C_nsE4WL0lp8OZ&si=EthNvWCMxXWj50Rr",
+          },
+        ],
+        auditory: [
+          {
+            title: "Famous Speeches Collection",
+            description: "Listen to iconic speeches from world leaders and orators — perfect for understanding tone, pacing, and rhetorical strategies.",
+            url: "https://open.spotify.com/playlist/7l1ImgoDryHCdq6SsrC2Jo?si=qsM-YjG5R0aU_Rz2a5aSiw",
+          },
+        ],
+        reading: [
+          {
+            title: "Oral Communication Modules",
+            description: "Self-learning modules covering speech writing, types of communication, and oral presentation skills aligned with the SHS curriculum.",
+            url: "https://shs.modyul.online/tag/oral-communication-in-context/",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Impromptu Speaking Exercises",
+            description: "Practice your on-the-spot speaking skills with guided impromptu speech exercises and tips for thinking on your feet.",
+            url: "https://youtu.be/SehA30-v-nM?si=kKaienYdoH-atd8H",
+          },
+        ],
       },
       {
         slug: "reading-and-writing-skills",
         name: "Reading and Writing Skills",
         description: "Strengthen reading comprehension and writing proficiency through analysis, composition, and critical literacy practices.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Reading & Writing Video Lessons",
+            description: "Video playlist with lessons on reading strategies, text analysis, and writing techniques for senior high school students.",
+            url: "https://youtube.com/playlist?list=PLcQqNc3v9Bcde0-KVybgFMQxSUZLWYuJ8&si=obbur6z0hIhb2bYJ",
+          },
+        ],
+        auditory: [
+          {
+            title: "Read Aloud Sessions & Audiobooks",
+            description: "Improve comprehension and fluency by listening to curated audiobook readings and read-aloud sessions on Spotify.",
+            url: "https://open.spotify.com/playlist/520Umcdb875vvnaORFCfWX?si=i3n9Z01bToOpf7No7SwgzA",
+          },
+        ],
+        reading: [
+          {
+            title: "Reading & Writing Skills Modules",
+            description: "Downloadable self-learning modules covering paragraph writing, essay structures, and critical reading techniques.",
+            url: "https://shs.modyul.online/tag/reading-and-writing-skills/",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Script Writing & Theater Workshop",
+            description: "Get hands-on with writing by crafting scripts and performing them — combining writing skills with physical expression.",
+            url: "https://youtu.be/23x-PVNAfXA?si=28C-xZAej5PrA1Rw",
+          },
+        ],
       },
       {
         slug: "media-and-information-literacy",
@@ -123,28 +171,100 @@ export const categories: Category[] = [
         slug: "21st-century-literature",
         name: "21st Century Literature from the Philippines and the World",
         description: "Explore contemporary literary works from the Philippines and around the world, analyzing themes, styles, and cultural contexts of modern literature.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "21st Century Literature Video Lessons",
+            description: "Visual playlist exploring Philippine and world literary genres, movements, and notable works of the 21st century.",
+            url: "https://youtube.com/playlist?list=PLUHq-qRsPvwfbUf9f1bdxrpk06gEwX2fM&si=XV95Crd9O75bp0z1",
+          },
+        ],
+        auditory: [
+          {
+            title: "Spoken Word Poetry Readings",
+            description: "Experience powerful spoken word poetry performances — feel the rhythm and emotion of contemporary Filipino and world literature.",
+            url: "https://open.spotify.com/playlist/0KBZJVEzw96B4lBTrjlsaF?si=xVTVlAanTCOUjmcQrchA5Q",
+          },
+        ],
+        reading: [
+          {
+            title: "21st Century Literature Modules",
+            description: "Self-learning modules covering literary genres, Philippine literary history, and analysis of contemporary works.",
+            url: "https://shs.modyul.online/tag/21st-century-literature-from-the-philippines-and-the-world/",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Dramatic Interpretations Workshop",
+            description: "Bring literature to life through dramatic interpretation — act out scenes, perform monologues, and embody characters from contemporary works.",
+            url: "https://youtu.be/zg70hU2cN0I?si=ZaNpYhS3pioK6MSo",
+          },
+        ],
       },
       {
         slug: "komunikasyon-at-pananaliksik",
         name: "Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino",
         description: "Pag-aralan ang mga konsepto ng komunikasyon at pananaliksik sa konteksto ng wikang Filipino at kulturang Pilipino.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Komunikasyon Video Lessons",
+            description: "Mga video lesson tungkol sa komunikasyon, wika, at kulturang Pilipino para sa mga mag-aaral ng SHS.",
+            url: "https://youtube.com/playlist?list=PLcQqNc3v9BccnJ0NgNP5F0yEuCB_HBwAD&si=XN4cQ6AqnWu-cvki",
+          },
+        ],
+        auditory: [
+          {
+            title: "Filipino Spoken Poetry",
+            description: "Makinig sa mga spoken word poetry sa Filipino — isang paraan ng pagpapahayag ng damdamin at kaisipan sa wikang Filipino.",
+            url: "https://open.spotify.com/playlist/7iT9E7yB6A317Qj1yIADal?si=BORfpFUgSvKy8o5D640f-g",
+          },
+        ],
+        reading: [
+          {
+            title: "Komunikasyon at Pananaliksik Modules",
+            description: "Mga modyul at babasahin tungkol sa komunikasyon, pananaliksik, at kulturang Pilipino na ayon sa kurikulum ng SHS.",
+            url: "https://shsph.blogspot.com/2021/04/komunikasyon-at-pananaliksik-sa-wika-at.html?m=1",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Research Defense Practice in Filipino",
+            description: "Matuto kung paano magsagawa ng research defense sa wikang Filipino — isang hands-on na aktibidad sa pananaliksik.",
+            url: "https://youtu.be/gAYB3y3pfLE?si=HHY6AfFDUovODF81",
+          },
+        ],
       },
       {
         slug: "pagbasa-at-pagsusuri",
         name: "Pagbasa at Pagsusuri Ng Iba't-ibang Teksto Tungo sa Pananaliksik",
         description: "Paunlarin ang kasanayan sa pagbasa, pagsusuri, at pagsulat ng iba't ibang uri ng teksto para sa pananaliksik.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Pagbasa at Pagsusuri Video Lessons",
+            description: "Mga video lesson na nagpapaliwanag ng iba't ibang uri ng teksto at mga estratehiya sa pagbasa at pagsusuri.",
+            url: "https://youtube.com/playlist?list=PL7nQoVRZsXUz55pJW5QhoOpURZMMjH9hg&si=d_09C8VLavqyn2Tk",
+          },
+        ],
+        auditory: [
+          {
+            title: "Pagbasa Audio Lessons",
+            description: "Mga audio lesson para sa pagbasa at pagsusuri ng mga teksto — perpekto para sa mga auditory learners.",
+            url: "https://youtube.com/playlist?list=PL9eWY9H6slg1P6zC0c4i72mUZIpv84kiN&si=ppyI1vILCP1WnUgO",
+          },
+        ],
+        reading: [
+          {
+            title: "Pagbasa at Pagsusuri Module 1",
+            description: "Komprehensibong modyul na tumatalakay sa mga teksto at estratehiya sa pagbasa tungo sa pananaliksik.",
+            url: "https://www.scribd.com/document/507095707/Module-1-Week-1-Pagbasa-at-Pagsusuri-sa-Ibat-Ibang-Teksto-Tungo-sa-Pananaliksik-module-1",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Interactive Text Analysis Activity",
+            description: "Hands-on na aktibidad sa pagsusuri ng mga teksto — magsanay sa pagkilala ng mga elemento at istruktura ng teksto.",
+            url: "https://youtu.be/1vWdCevKmf4?si=P-ssTw0GQOstQQug",
+          },
+        ],
       },
     ],
   },
@@ -160,19 +280,67 @@ export const categories: Category[] = [
         slug: "personal-development",
         name: "Personal Development",
         description: "Understand yourself better through self-awareness, emotional intelligence, interpersonal relationships, and goal setting for personal growth.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Personal Development Video Lessons",
+            description: "Video playlist covering self-awareness, goal-setting, stress management, and building healthy relationships.",
+            url: "https://youtube.com/playlist?list=PL5IAC9BfZH2aCOg8vOBUdvE8QsZFLN7av&si=_d5noxFiA848RBNP",
+          },
+        ],
+        auditory: [
+          {
+            title: "Personal Growth Podcast",
+            description: "A Spotify podcast that discusses self-improvement, emotional intelligence, and personal development strategies.",
+            url: "https://open.spotify.com/show/6rptxTurg2ujmQOInQ7low?si=jE2CFRQFQHqt2hyJqZ-BgQ",
+          },
+        ],
+        reading: [
+          {
+            title: "Personal Development Modules 1–6",
+            description: "Complete set of self-learning modules covering personality, self-concept, emotions, relationships, and career planning.",
+            url: "https://www.scribd.com/document/459293412/MODULE-1-6-Personal-Development",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Self-Discovery & Mindfulness Exercises",
+            description: "Guided mindfulness and self-reflection exercises to build self-awareness and emotional regulation through physical engagement.",
+            url: "https://youtu.be/ZS8DTcuzfEo?si=_5tewXFvytA_urUU",
+          },
+        ],
       },
       {
         slug: "physical-education",
         name: "Physical Education",
         description: "Engage in physical fitness activities, learn about health and wellness, and develop an active lifestyle through sports and exercise.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Physical Education Video Lessons",
+            description: "Video playlist demonstrating exercises, sports techniques, and fitness routines aligned with the PE curriculum.",
+            url: "https://youtube.com/playlist?list=PLyvLlSwBY36sG69-3xRGSsg529usfpwBg&si=P0b7CxHl_5ZbkDTs",
+          },
+        ],
+        auditory: [
+          {
+            title: "PE Audio Discussion",
+            description: "Listen to discussions about physical fitness concepts, health principles, and active lifestyle tips.",
+            url: "https://drive.google.com/file/d/1xfiP32I5hQLbHlI-WDPdVmcTeQ3AUxaj/view?usp=drivesdk",
+          },
+        ],
+        reading: [
+          {
+            title: "PE HOPE Module",
+            description: "Self-learning module covering health-optimizing physical education with lessons on fitness, nutrition, and wellness.",
+            url: "https://www.scribd.com/document/471319584/PE-12-HOPE-3-Q1-Module-1-Lesson-1-4-by-Shine",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Follow-Along Workout Routine",
+            description: "Get moving with this guided workout routine — perfect for practicing fitness exercises at home or in the classroom.",
+            url: "https://youtu.be/CDygGfksP-0?si=DcnDKIEDwzt508sL",
+          },
+        ],
       },
     ],
   },
@@ -188,19 +356,67 @@ export const categories: Category[] = [
         slug: "general-mathematics",
         name: "General Mathematics",
         description: "Master key mathematical concepts including functions, rational equations, exponential and logarithmic functions, and business mathematics.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "General Mathematics PowerPoint",
+            description: "Visual presentation covering key GenMath topics like functions, rational expressions, and business math with graphs and charts.",
+            url: "https://www.scribd.com/presentation/427255641/General-Mathematics-PowerPoint",
+          },
+        ],
+        auditory: [
+          {
+            title: "Math Explained Podcast",
+            description: "Audio explanations of general mathematics topics — listen and learn about functions, equations, and problem-solving approaches.",
+            url: "https://open.spotify.com/show/2c7kM1S61DGpR7dnXQBre4",
+          },
+        ],
+        reading: [
+          {
+            title: "General Mathematics Reading Module",
+            description: "Comprehensive reading material and PDF slides covering GenMath lessons from functions to business math applications.",
+            url: "https://www.slideshare.net/slideshow/general-mathematicspdf/260278094",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "GenMath Learning Activity Sheets",
+            description: "Hands-on activity sheets with practice problems and exercises to build math skills through doing and solving.",
+            url: "https://www.scribd.com/document/561500821/Genmath-Learning-Activity-Sheets",
+          },
+        ],
       },
       {
         slug: "statistics-and-probability",
         name: "Statistics and Probability",
         description: "Learn how to collect, analyze, and interpret data using statistical methods and probability theory for informed decision-making.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Statistics & Probability Introduction",
+            description: "Visual slideshow introducing core concepts of statistics and probability with diagrams, graphs, and examples.",
+            url: "https://www.slideshare.net/slideshow/introduction-to-statistics-and-probability-232532533/232532533",
+          },
+        ],
+        auditory: [
+          {
+            title: "Statistics Podcast",
+            description: "Listen to clear explanations of statistical concepts, probability distributions, and data analysis methods.",
+            url: "https://open.spotify.com/show/3NA20RWdSNIWlQ3j3j40Gv",
+          },
+        ],
+        reading: [
+          {
+            title: "Statistics & Probability Module",
+            description: "Self-learning module covering random variables, probability distributions, sampling, and hypothesis testing.",
+            url: "https://www.scribd.com/document/498116517/statistics-and-probablity-SHS-11-module-1-week1",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Interactive Data Collection Activity",
+            description: "Learn statistics by doing — collect real data, create graphs, and compute probabilities through hands-on exercises.",
+            url: "https://youtu.be/HnIHpjb3apc?si=292w5xAMIKwEDkt8",
+          },
+        ],
       },
     ],
   },
@@ -216,19 +432,72 @@ export const categories: Category[] = [
         slug: "earth-and-life-science",
         name: "Earth and Life Science",
         description: "Study the Earth's systems, geological processes, ecosystems, and the diversity of life forms that inhabit our planet.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Earth & Life Science Slideshow",
+            description: "Visual presentation covering geology, earth systems, ecosystems, and biodiversity with diagrams and illustrations.",
+            url: "https://www.slideshare.net/slideshow/earth-and-life-science-grade-11-shs/250291855",
+          },
+        ],
+        auditory: [
+          {
+            title: "Earth Science Audio Lesson",
+            description: "Listen to discussions about geological processes, earth's layers, plate tectonics, and natural phenomena.",
+            url: "https://drive.google.com/file/d/17qeVW_BmPzzLqS4pbg8HBj31U6dP32Oj/view?usp=drivesdk",
+          },
+        ],
+        reading: [
+          {
+            title: "Earth & Life Science Module",
+            description: "Comprehensive reading module covering minerals, rocks, geological time, ecosystems, and the origin of life.",
+            url: "https://www.scribd.com/doc/317049780/Earth-and-Life-Science-Module",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Earth Science Hands-On Activities",
+            description: "Engage with earth science through lab activities, experiments, and field observations about our planet.",
+            url: "https://wildearthlab.com/2024/08/28/earth-science-activities/",
+          },
+          {
+            title: "Engaging Earth Science Lab Exercises",
+            description: "Additional interactive activities and experiments designed to make earth science concepts tangible and fun.",
+            url: "https://www.jove.com/schools/engaging-activities-for-teaching-earth-science/",
+          },
+        ],
       },
       {
         slug: "physical-science",
         name: "Physical Science",
         description: "Understand the fundamental principles of physics and chemistry that govern matter, energy, and the interactions between them.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Physical Science PowerPoint Discussion",
+            description: "Visual presentation explaining matter, atomic structure, chemical bonding, and physical laws with illustrations.",
+            url: "https://www.slideshare.net/slideshow/physical-science-quarter-1-week-1-discussionppt/255848651",
+          },
+        ],
+        auditory: [
+          {
+            title: "Physical Science Podcast",
+            description: "Audio discussions on physics and chemistry concepts — atoms, elements, forces, and energy explained for SHS learners.",
+            url: "https://open.spotify.com/show/57nhG6H88AG3JkPkOqMdF8?si=UJq82xMpR0CIWUiL6aqerw",
+          },
+        ],
+        reading: [
+          {
+            title: "Physical Science Module",
+            description: "Self-learning module covering matter, elements, compounds, and the fundamental forces of nature.",
+            url: "https://www.scribd.com/document/506899403/Physical-Science11-Q1-MODULE-1-08082020",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Physical Science Experiment Demo",
+            description: "Watch and follow along with hands-on experiments demonstrating key physical science principles you can try at home.",
+            url: "https://youtu.be/bOuEJf8Dr_4?si=seqfNjMbBRVOddO-",
+          },
+        ],
       },
     ],
   },
@@ -244,10 +513,34 @@ export const categories: Category[] = [
         slug: "understanding-culture-society-politics",
         name: "Understanding Culture, Society and Politics",
         description: "Examine the dynamics of culture, society, and politics in the Philippines and how they shape the Filipino identity and nationhood.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "UCSP Visual Presentation",
+            description: "Slideshow covering key UCSP topics including culture, socialization, political systems, and social change.",
+            url: "https://www.slideshare.net/slideshow/ucsp-253287156/253287156",
+          },
+        ],
+        auditory: [
+          {
+            title: "UCSP Audio Discussion",
+            description: "Listen to an audio lesson discussing culture, society, politics, and how they interconnect in the Philippine context.",
+            url: "https://drive.google.com/file/d/1CG5_gaw-jI784k_BkuxZ9sOXY02bEN7C/view?usp=drivesdk",
+          },
+        ],
+        reading: [
+          {
+            title: "UCSP Module 1",
+            description: "Self-learning module on understanding culture, society, and politics with readings and reflection activities.",
+            url: "https://www.scribd.com/document/545092565/UCSP-Q1M1",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Cultural Immersion Activity",
+            description: "Engage in a hands-on cultural analysis activity — observe, document, and reflect on cultural practices in your community.",
+            url: "https://youtu.be/8JTQjABNfgM?si=oHgyaojveE9AIj4D",
+          },
+        ],
       },
       {
         slug: "contemporary-arts-philippines",
@@ -272,7 +565,7 @@ export const categories: Category[] = [
         ],
         auditory: [
           {
-            title: "Integrative Art as Applied to Philippine Contemporary Art (Podcast)",
+            title: "Integrative Art Podcast",
             description: "Apple Podcast episode discussing integrative art forms in Philippine contemporary art practice.",
             url: "https://podcasts.apple.com/us/podcast/unit-1-integrative-art-as-applied-to-philippine-contemporary/id1524802775?i=1000485832882",
           },
@@ -321,10 +614,34 @@ export const categories: Category[] = [
         slug: "introduction-philosophy-human-person",
         name: "Introduction to the Philosophy of the Human Person",
         description: "Engage with fundamental philosophical questions about human existence, freedom, morality, and the meaning of life.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Introduction to Philosophy Slideshow",
+            description: "Visual presentation introducing key philosophical concepts, thinkers, and the nature of the human person.",
+            url: "https://www.slideshare.net/slideshow/introduction-to-philosophy-54355159/54355159",
+          },
+        ],
+        auditory: [
+          {
+            title: "Philosophy for Beginners Podcast",
+            description: "A beginner-friendly podcast exploring philosophical ideas, ethics, and what it means to be human.",
+            url: "https://podcasts.apple.com/us/podcast/philosophy-for-beginners/id381704095",
+          },
+        ],
+        reading: [
+          {
+            title: "Philosophy Module 1",
+            description: "Self-learning module introducing the philosophy of the human person, covering key thinkers and philosophical methods.",
+            url: "https://www.scribd.com/document/672373839/Philo-Mod1-Q1-Introduction-to-the-Philosophy-of-the-Human-Person-v3",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Philosophical Dialogue Activity",
+            description: "Engage in Socratic dialogue and group discussion exercises to practice philosophical thinking and argumentation.",
+            url: "https://youtu.be/NKEhdsnKKHs?si=h3rw4z_jJ0fC9SEa",
+          },
+        ],
       },
     ],
   },
