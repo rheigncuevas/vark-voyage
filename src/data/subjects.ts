@@ -432,19 +432,72 @@ export const categories: Category[] = [
         slug: "earth-and-life-science",
         name: "Earth and Life Science",
         description: "Study the Earth's systems, geological processes, ecosystems, and the diversity of life forms that inhabit our planet.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Earth & Life Science Slideshow",
+            description: "Visual presentation covering geology, earth systems, ecosystems, and biodiversity with diagrams and illustrations.",
+            url: "https://www.slideshare.net/slideshow/earth-and-life-science-grade-11-shs/250291855",
+          },
+        ],
+        auditory: [
+          {
+            title: "Earth Science Audio Lesson",
+            description: "Listen to discussions about geological processes, earth's layers, plate tectonics, and natural phenomena.",
+            url: "https://drive.google.com/file/d/17qeVW_BmPzzLqS4pbg8HBj31U6dP32Oj/view?usp=drivesdk",
+          },
+        ],
+        reading: [
+          {
+            title: "Earth & Life Science Module",
+            description: "Comprehensive reading module covering minerals, rocks, geological time, ecosystems, and the origin of life.",
+            url: "https://www.scribd.com/doc/317049780/Earth-and-Life-Science-Module",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Earth Science Hands-On Activities",
+            description: "Engage with earth science through lab activities, experiments, and field observations about our planet.",
+            url: "https://wildearthlab.com/2024/08/28/earth-science-activities/",
+          },
+          {
+            title: "Engaging Earth Science Lab Exercises",
+            description: "Additional interactive activities and experiments designed to make earth science concepts tangible and fun.",
+            url: "https://www.jove.com/schools/engaging-activities-for-teaching-earth-science/",
+          },
+        ],
       },
       {
         slug: "physical-science",
         name: "Physical Science",
         description: "Understand the fundamental principles of physics and chemistry that govern matter, energy, and the interactions between them.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Physical Science PowerPoint Discussion",
+            description: "Visual presentation explaining matter, atomic structure, chemical bonding, and physical laws with illustrations.",
+            url: "https://www.slideshare.net/slideshow/physical-science-quarter-1-week-1-discussionppt/255848651",
+          },
+        ],
+        auditory: [
+          {
+            title: "Physical Science Podcast",
+            description: "Audio discussions on physics and chemistry concepts — atoms, elements, forces, and energy explained for SHS learners.",
+            url: "https://open.spotify.com/show/57nhG6H88AG3JkPkOqMdF8?si=UJq82xMpR0CIWUiL6aqerw",
+          },
+        ],
+        reading: [
+          {
+            title: "Physical Science Module",
+            description: "Self-learning module covering matter, elements, compounds, and the fundamental forces of nature.",
+            url: "https://www.scribd.com/document/506899403/Physical-Science11-Q1-MODULE-1-08082020",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Physical Science Experiment Demo",
+            description: "Watch and follow along with hands-on experiments demonstrating key physical science principles you can try at home.",
+            url: "https://youtu.be/bOuEJf8Dr_4?si=seqfNjMbBRVOddO-",
+          },
+        ],
       },
     ],
   },
