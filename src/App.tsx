@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import PageTransition from "./components/PageTransition";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import CategoryPage from "./pages/CategoryPage";
 import SubjectPage from "./pages/SubjectPage";
