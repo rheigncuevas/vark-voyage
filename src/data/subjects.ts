@@ -513,10 +513,34 @@ export const categories: Category[] = [
         slug: "understanding-culture-society-politics",
         name: "Understanding Culture, Society and Politics",
         description: "Examine the dynamics of culture, society, and politics in the Philippines and how they shape the Filipino identity and nationhood.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "UCSP Visual Presentation",
+            description: "Slideshow covering key UCSP topics including culture, socialization, political systems, and social change.",
+            url: "https://www.slideshare.net/slideshow/ucsp-253287156/253287156",
+          },
+        ],
+        auditory: [
+          {
+            title: "UCSP Audio Discussion",
+            description: "Listen to an audio lesson discussing culture, society, politics, and how they interconnect in the Philippine context.",
+            url: "https://drive.google.com/file/d/1CG5_gaw-jI784k_BkuxZ9sOXY02bEN7C/view?usp=drivesdk",
+          },
+        ],
+        reading: [
+          {
+            title: "UCSP Module 1",
+            description: "Self-learning module on understanding culture, society, and politics with readings and reflection activities.",
+            url: "https://www.scribd.com/document/545092565/UCSP-Q1M1",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Cultural Immersion Activity",
+            description: "Engage in a hands-on cultural analysis activity — observe, document, and reflect on cultural practices in your community.",
+            url: "https://youtu.be/8JTQjABNfgM?si=oHgyaojveE9AIj4D",
+          },
+        ],
       },
       {
         slug: "contemporary-arts-philippines",
@@ -541,7 +565,7 @@ export const categories: Category[] = [
         ],
         auditory: [
           {
-            title: "Integrative Art as Applied to Philippine Contemporary Art (Podcast)",
+            title: "Integrative Art Podcast",
             description: "Apple Podcast episode discussing integrative art forms in Philippine contemporary art practice.",
             url: "https://podcasts.apple.com/us/podcast/unit-1-integrative-art-as-applied-to-philippine-contemporary/id1524802775?i=1000485832882",
           },
@@ -590,10 +614,34 @@ export const categories: Category[] = [
         slug: "introduction-philosophy-human-person",
         name: "Introduction to the Philosophy of the Human Person",
         description: "Engage with fundamental philosophical questions about human existence, freedom, morality, and the meaning of life.",
-        visual: [],
-        auditory: [],
-        reading: [],
-        kinesthetic: [],
+        visual: [
+          {
+            title: "Introduction to Philosophy Slideshow",
+            description: "Visual presentation introducing key philosophical concepts, thinkers, and the nature of the human person.",
+            url: "https://www.slideshare.net/slideshow/introduction-to-philosophy-54355159/54355159",
+          },
+        ],
+        auditory: [
+          {
+            title: "Philosophy for Beginners Podcast",
+            description: "A beginner-friendly podcast exploring philosophical ideas, ethics, and what it means to be human.",
+            url: "https://podcasts.apple.com/us/podcast/philosophy-for-beginners/id381704095",
+          },
+        ],
+        reading: [
+          {
+            title: "Philosophy Module 1",
+            description: "Self-learning module introducing the philosophy of the human person, covering key thinkers and philosophical methods.",
+            url: "https://www.scribd.com/document/672373839/Philo-Mod1-Q1-Introduction-to-the-Philosophy-of-the-Human-Person-v3",
+          },
+        ],
+        kinesthetic: [
+          {
+            title: "Philosophical Dialogue Activity",
+            description: "Engage in Socratic dialogue and group discussion exercises to practice philosophical thinking and argumentation.",
+            url: "https://youtu.be/NKEhdsnKKHs?si=h3rw4z_jJ0fC9SEa",
+          },
+        ],
       },
     ],
   },
